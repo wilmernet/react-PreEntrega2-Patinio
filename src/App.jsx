@@ -4,6 +4,7 @@ import NavBar from './components/NavBar/NavBar';
 import Header from './components/Header/Header';
 import AboutPage from './views/AboutPage/AboutPage';
 import HomePage from './views/HomePage/HomePage';
+import CategoryPage from './views/CategoryPage/CategoryPage';
 
 const App=()=> {
 
@@ -16,7 +17,8 @@ const App=()=> {
         <Routes>
           <Route path='/' element={<HomePage/>} />
           <Route path='/about' element={<AboutPage/>} />
-          <Route path='/about2' element={<AboutPage/>} />
+          <Route path='/category' element={<CategoryPage/>} />
+          <Route path='/category/:categoryId' element={<CategoryPage/>} />
         </Routes>
       </div>
     </Router>    

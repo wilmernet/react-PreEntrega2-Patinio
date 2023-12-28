@@ -8,9 +8,9 @@ import "./CardProduct.css";
 const CardProducto = ({ char }) => {
   const { image, title, price, description} = char;
   return (
-    <Card sx={{ maxWidth: 345, marginTop: "20px" }}>
-      <CardActionArea className="CardArea">
-        <CardMedia component="img" image={image} alt="green iguana" sx={{ borderColor: "red" }} className="CardProductImg"/>
+    <Card sx={{ maxWidth: 345, marginTop: "20px"}} className="Card">
+      <CardActionArea className="CardArea" sx={{display: "flex", flexDirection:"column", justifyContent: "end"}}>
+        <CardMedia component="img" image={image} alt="green iguana" sx={{objectFit:"contain" }} className="CardProductImg"/>
         <CardContent>
           <Typography gutterBottom variant="h5" component="div">
             {title}

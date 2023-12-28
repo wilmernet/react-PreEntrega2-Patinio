@@ -1,8 +1,12 @@
-import React from 'react'
+// import ListProducts from "../../components/ListProducts";
 
 const HomePage = () => {
   return (
-    <div>HomePage</div>
+    <div>
+      {/* <div><ListProducts/></div> */}
+      <div>algo</div>
+    </div>
+    
   )
 }
 

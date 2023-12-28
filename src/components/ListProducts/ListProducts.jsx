@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
-import CardUser from "../CardUser/CardUser";
-import "./ListUser.css";
+import CardUser from "../CardProduct/CardProduct";
+import "./ListProducts.css";
 
 import { Link } from "react-router-dom";
 
@@ -9,7 +9,7 @@ const ListUser = () => {
   const [chars, setChars] = useState([]);
 
   useEffect(() => {
-    axios("https://rickandmortyapi.com/api/character").then((res) =>
+    axios("https://fakestoreapi.com/products").then((res) =>
       setChars(res.data.results)
     );
   }, []);

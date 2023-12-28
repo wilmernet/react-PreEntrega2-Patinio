@@ -4,12 +4,12 @@ import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
 import { CardActionArea } from "@mui/material";
 
-const CardUser = ({ char }) => {
+const CardProducto = ({ char }) => {
   const { image, title, price, description} = char;
   return (
     <Card sx={{ maxWidth: 345 }}>
       <CardActionArea>
-        <CardMedia component="img" image={image} alt="green iguana" />
+        <CardMedia component="img" image={image} alt="green iguana" sx={{ borderColor: "red" }} />
         <CardContent>
           <Typography gutterBottom variant="h5" component="div">
             {title}
@@ -26,4 +26,4 @@ const CardUser = ({ char }) => {
   );
 };
 
-export default CardUser;
+export default CardProducto;

@@ -5,12 +5,12 @@ import "./ListProducts.css";
 
 import { Link } from "react-router-dom";
 
-const ListUser = () => {
+const ListProducts = () => {
   const [chars, setChars] = useState([]);
 
   useEffect(() => {
     axios("https://fakestoreapi.com/products").then((res) =>
-      setChars(res.data.results)
+      setChars(res.data)
     );
   }, []);
 
@@ -29,4 +29,4 @@ const ListUser = () => {
   );
 };
 
-export default ListUser;
+export default ListProducts;
